@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>Lab 6 Exercise 1</title>
+</head>
+<body>
+<h1>Multiplication Table</h1>
+<?php
+    error_reporting(E_ALL);
+    ini_set("display_errors",1);
+    $length=100;
+    $height=100;
+    $multTable = array();
+
+
+    $multTable[0] = Array();
+    $multTable[0][0] = " ";
+    for($i = 0; $i <= $length; $i++){
+        $multTable[0][$i+1] = $i+1;
+    }
+    for($i = 1; $i <= $height; $i++){
+        $multTable[$i] = Array($i);
+    }
+    for($i = 1; $i <= $height; $i++){
+        for($j = 1; $j <= $length; $j++){
+            $multTable[$i][$j] = $i * $j;
+        }
+
+
+    }
+
+    echo "<table border='1px'>";
+    for($i = 0; $i <= $height; $i++){
+        echo "<tr>";
+        for($j = 0; $j <= $length; $j++){
+            if($i == 0 || $j == 0){
+                echo "<th>";
+            }else{
+                echo "<td>";
+            }
+            echo $multTable[$i][$j];
+            if($i == 0 || $j == 0){
+                echo "</th>";
+            }else{
+                echo "</td>";
+            }
+        }
+        echo "</tr>";
+    }
+    echo "</table>";
+?>
+</body>
+</html>

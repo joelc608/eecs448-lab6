@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Customer Frontend</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script src="formChecker.js"></script>
+<h1>Online Store</h1>
+<form action="customerBackend.php" method="post" onsubmit="verifyForm(event)">
+<table border="1px">
+<tr>
+    <td>NVIDIA Geforce RTX 3060</td>
+    <td><img src="https://i.ebayimg.com/images/g/l84AAOSwnH5jI7l7/s-l1600.jpg" height="100px"></td>
+    <td>$329</td>
+    <td>
+    <label for="rtx3060">Quantity</label>
+    <input type="text" id="rtx3060" name="rtx3060">
+    </td>
+</tr>
+<tr>
+    <td>NVIDIA Geforce RTX 3080</td>
+    <td><img src="https://c1.neweggimages.com/ProductImage/ADFRD2203300ZKUZHF0.jpg" height="100px"></td>
+    <td>$699</td>
+    <td>
+    <label for="rtx3080">Quantity</label>
+    <input type="text" id="rtx3080" name="rtx3080">
+    </td>
+</tr>
+<tr>
+    <td>NVIDIA Geforce RTX 3090</td>
+    <td><img src="https://m.media-amazon.com/images/I/81-GWj0nEkL.jpg" height="100px"></td>
+    <td>$1499</td>
+    <td>
+    <label for="rtx3090">Quantity</label>
+    <input type="text" id="rtx3090" name="rtx3090">
+    </td>
+</tr>
+</table>
+<h2>Shipping Options</h2>
+<input type="radio" id="free7day" name="shipping" value="free7day">
+<label for="free7day">Free 7 day</label><br>
+<input type="radio" id="50overnight" name="shipping" value="50overnight">
+<label for="50overnight">$50.00 over night</label><br>
+<input type="radio" id="5threeday" name="shipping" value="5threeday">
+<label for="5threeday">$5.00 three day</label><br>
+
+
+<h2>Login</h2>
+<label for="email">Email</label>
+<input type="text" id="email" name="email"><br>
+<label for="pass">Password</label>
+<input type="password" id="pass" name="pass"><br>
+
+<input type="reset" value="Reset"><br>
+<input type="submit" value="Submit">
+
+</form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+h1 {
+    font-family: "Arial";
+    background: #69ff91;
+    border: 5px dashed black;
+}
+
+h2 {
+    font-family: "Arial";
+    background: #45d17b;
+    border: 5px dotted #1e3624;
+}
+
+td {
+    font-family: "Arial";
+    background: #94c8ff;
+}
+
+th {
+    font-family: "Arial";
+    background: #b494ff;
+}
